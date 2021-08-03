@@ -15,6 +15,8 @@ public class Input {
 		
 		File f = new File ("/Users/christina/Desktop/Input.csv"); 
 		Scanner file = new Scanner(f); 
+		
+		
 
 	}
 
