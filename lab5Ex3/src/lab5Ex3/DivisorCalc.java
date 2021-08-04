@@ -9,16 +9,19 @@ public class DivisorCalc {
 	
 	public static int gcd (int num1, int num2) {
 		
+		//Make sure that num1 is always greater than num2
 		if (num1 < num2) {
 			int temp = num1; 
 			num1 = num2; 
 			num2 = temp; 
 		} 
 		
+		//if num2 divides num1 without remainder, gcd = num2
 		if (num1 % num2 == 0) {
 			return num2; 
 		}
 		
+		//else get the remainder of num1/num2
 		int remainder = num1 % num2; 
 		
 		return gcd(num2, remainder); 
